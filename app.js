@@ -10,4 +10,4 @@ app.get("/", (req,res)=>{
 app.use(express.static("public"))
 
 
-app.listen(port ,()=> console.log("Servidor corriendo"))
+app.listen(port , ()=> console.log(`Servidor levantado en el puerto ${port}\n http://localhost:${port}`))
